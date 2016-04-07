@@ -35,7 +35,7 @@ install:
   - sudo ufw status
   - sudo iptables -L -n -v
   - sudo iptables -A OUTPUT -p tcp --dport 9900 -j DROP
-  - sudo ufw enable
+  - sudo ufw enable --force
   - sudo ufw reload
 
 before_script:
